@@ -7,14 +7,4 @@ from collections import defaultdict
 
 with open(sys.argv[1],'r') as file:
 
-	rna = ''
-
-	for nucl in file.readlines()[0].rstrip():
-
-		if nucl == 'T':
-			rna+= 'U'
-
-		else:
-			rna+= nucl
-
-	print(rna)
+	print(file.readlines()[0].rstrip().replace("T", "U"))
