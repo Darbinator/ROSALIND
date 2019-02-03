@@ -10,25 +10,19 @@ from rosalind import nameToSeq
 
 with open(sys.argv[1],'r') as file:
 
-	file = nameToSeq(file)
+	seqs = nameToSeq(file)
 
-	print(file)
+	GC = 0
+	seq_GC = ''
 
-# 	GC = 0
-# 	Seq = ''
+	for name,seq in seqs.items():
+		if (( seq.count("C") + seq.count("G") ) / len(seq.rstrip())) * 100  > GC:
 
-# 	for ligne in file.readlines():
+			GC = (( seq.count("C") + seq.count("G") ) / len(seq.rstrip())) * 100 
+			seq_GC = name.lstrip(">")
 
-# 		if ligne.startswith(">"):
 
-# 			SeqC = ligne.lstrip(">")
-
-# 		elif ( ligne.count("C") + ligne.count("G") ) / len(ligne.rstrip()) > GC:
-
-# 			Seq = SeqC
-# 			GC = ( ligne.count("C") + ligne.count("G") ) / len(ligne.rstrip())
-
-# 	print(Seq+str(GC))
+	print(seq_GC+"\n"+str(GC))
 
 
 
