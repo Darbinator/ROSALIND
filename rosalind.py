@@ -4,8 +4,7 @@ import sys
 import os
 import re
 from collections import defaultdict
-
-
+from Bio import SeqIO
 
 def nameToSeq(file):
 
