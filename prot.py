@@ -27,7 +27,6 @@ codonTable = ''' UUU F      CUU L      AUU I      GUU V
 
 with open(sys.argv[1],'r') as file:
 
-
 	seq = file.readline().rstrip()
 	prot=''
 
