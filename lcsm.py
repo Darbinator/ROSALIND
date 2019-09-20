@@ -55,8 +55,6 @@ with open(sys.argv[1],'r') as file:
 						else:
 							seqC += 1
 
-							print(len(list(seqs.values())),seqC,motif)
-
 
 
 					

@@ -64,8 +64,16 @@ def rnaToProt(seq):
 	return prot
 
 
+def reverseComplement(seq):
+	complement = {'A':'T','T':'A','G':'C','C':'G'}
 
+	reverseSeq = seq[::-1]
+	revComplementSeq = ''
 
+	for i in range(len(reverseSeq)):
+		revComplementSeq += complement[reverseSeq[i]]
+
+	return revComplementSeq
 
 
 
