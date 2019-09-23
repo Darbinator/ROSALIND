@@ -18,10 +18,5 @@ with open(sys.argv[1],'r') as input_data:
 
 	number = int(file[1])
 
-
-
-
-
-
 for elem in it.product(seq,repeat=number):
 	print(''.join(list(elem)))
