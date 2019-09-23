@@ -30,5 +30,4 @@ print(str(factorial(len(perm_set))))
 for permutation in perm_list:
 	print('\n'+' '.join(map(str,permutation)))
 
-print()
 
