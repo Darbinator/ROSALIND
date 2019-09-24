@@ -13,7 +13,7 @@ with open(sys.argv[1],'r') as file:
 	seqs = nameToSeq(file)
 
 	seq = list(seqs.values())[0]
-	print(seq)
+
 array_kmer = []
 
 for elem in it.product('ACGT',repeat=4):
