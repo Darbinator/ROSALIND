@@ -4,6 +4,7 @@ import sys
 import os
 import re
 from collections import defaultdict
+import Bio
 from Bio import SeqIO
 from rosalind import nameToSeq
 import itertools as it
@@ -33,3 +34,5 @@ print(elements)
 
 for elem in elements:
 	print(elem)
+
+
